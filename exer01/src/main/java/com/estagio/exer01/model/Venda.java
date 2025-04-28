@@ -1,22 +1,24 @@
 package com.estagio.exer01.model;
 
+import java.time.LocalDate;
+
 //data da venda, nome do cliente, valor da venda
 public class Venda {
-    private String dataVenda;
+    private LocalDate dataVenda;
     private String nomeCliente;
     private double valorVenda;
 
-    public Venda(String dataVenda, String nomeCliente, double valorVenda) {
+    public Venda(LocalDate dataVenda, String nomeCliente, double valorVenda) {
         this.dataVenda = dataVenda;
         this.nomeCliente = nomeCliente;
         this.valorVenda = valorVenda;
     }
 
-    public String getDataVenda() {
+    public LocalDate getDataVenda() {
         return dataVenda;
     }
 
-    public void setDataVenda(String dataVenda) {
+    public void setDataVenda(LocalDate dataVenda) {
         this.dataVenda = dataVenda;
     }
 
